@@ -1,0 +1,25 @@
+footer{
+    background-color: #F9FAFB;
+    .width-80{
+        width: 80px;
+        height: 80px;
+    }
+    .max-width{max-width: 160px;}
+    .footer-list{
+        a{
+            color: $gray;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .license{
+            max-width: 400px;
+            > div:nth-child(2){
+                max-width: 260px;
+                margin: auto;
+            }
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.fs-7{
+    font-size: 14px;
+}
+.text-gray-lighten{
+    color: lighten($color: $gray, $amount: 20%);
+}
+.bg-gray-light{
+    background-color: lighten($color: $gray, $amount: 60%);
+}
+.icon-star{
+    width: 24px;
+    height: 24px;
+}
+.icon-share{
+    width: 38px;
+    height: 38px;
+}
+.icon-like{
+    width: 32px;
+    height: 32px;
+}
+.circle{
+    width: 28px;
+    height: 28px;
+    box-sizing: content-box;
+    margin-left: 5px;
+}
+.active-circle{
+    border: 4px solid $primary;
+}
+.max-570{
+    max-width: 570px;
+}

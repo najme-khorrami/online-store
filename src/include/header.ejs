@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="images/favicon.ico">
+    <title>sample home</title>
+    <% include /styles.ejs %>
+</head>
+
+<body class="Site">
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="d-flex align-items-center position-relative justify-content-between mt-3 flex-wrap flex-md-nowrap">
+                <div class="logo">
+                    <img src="../images/Logo.svg" alt="">
+                </div>
+                <div class="input-group d-flex">
+                    <input type="search" class="form-control border-0 rounded-4 flex-shrink-1" placeholder="جست و جوی برند، مدل، دسته و ..." aria-label="default">
+                    <button class="btn rounded-4" type="button" id="button-addon2"><img src="../images/search-normal.svg" alt=""></button>
+                </div>
+                <div class="account d-flex align-items-baseline">
+                    <div class="border-end pe-3 d-sm-flex align-items-center d-none">
+                        <img src="../images/user.svg" class="px-2" alt="">
+                        <a href="#" class="text-nowrap enter d-lg-block d-none">وارد شوید</a>
+                    </div>
+                    <div class="ps-3">
+                        <img src="../images/Cart.svg" class="align-baseline" alt="">
+                    </div>
+                    <div class="ps-3 d-sm-none">
+                        <button type="button" class="align-baseline btn" data-bs-toggle="modal" data-bs-target="#menuModal"><img src="../images/more.svg" class="align-baseline" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal -->
+    <div class="modal fade" id="menuModal" tabindex="-1" aria-labelledby="exampleModalLabel" role="dialog" aria-hidden="true">
+        <div class="modal-dialog  modal-fullscreen-sm-down">
+            <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-body">
+                    <p>Modal body text goes here.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<nav class="d-none d-lg-block">
+    <div class="container">
+        <div class="row">
+            <div class="d-flex navigation mt-4 mb-2">
+                <a href="#" class="text-nowrap text-white rounded-4 py-2 px-3 me-3 item">
+                    <img src="../images/category.svg" alt="">
+                    دسته بندی محصولات</a>
+                <a href="#" class="text-nowrap text-gray py-2 px-3 mx-3">پرفروش ترین ها</a>
+                <a href="#" class="text-nowrap text-secondary py-2 px-3 mx-3">شگفت انگیز ها</a>
+                <a href="#" class="text-nowrap text-gray py-2 px-3 mx-3">جدیدترین ها</a>
+            </div>
+        </div>
+    </div>
+</nav>

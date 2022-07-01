@@ -1,0 +1,31 @@
+header{
+    .input-group{
+        margin: 0 30px;
+        input , button{
+            background-color: #F3F4F6;
+        }
+        @include media-breakpoint-down(md) {
+            order: 5;
+            columns: 12;
+            margin: 15px 0 0 0;
+        }
+    }
+    .account{
+        transform: translateY(-6px);
+    }
+    .enter{
+        color: $gray;
+        &:hover{
+            color: black;
+        }
+    }
+}
+nav{
+    .navigation .item{
+        background-color: #6366F1;
+        transition: .3s;
+        &:hover{
+            background-color: #3730A3;
+        }
+    }
+}

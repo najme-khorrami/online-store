@@ -1,0 +1,101 @@
+main{
+    .owl-carousel-head{
+        position: relative;
+        .owl-dots{
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%);
+            .owl-dot{
+                span{
+                    width: 16px;
+                    height: 16px;
+                    background-color: rgba(75, 85, 99,.6);
+                }
+                &.active span{
+                    background-color: #111827;
+                }
+            } 
+        }
+    } 
+    .panels{
+        .owl-carousel{
+            @include media-breakpoint-up(lg){
+                width: 90%;
+            }
+            width: 80%;
+            margin: auto;
+        } 
+        .slider-nav{
+            .right-arrow{right: 0;}
+            .left-arrow{left: 0;}
+        }
+    }
+    .price-box{
+        background-color: #F3F4F6;
+        min-width: 280px;
+        font-size: 14px;
+        .star{
+            width: 16px;
+            height: 16px;
+        }
+    }
+    .owl-products-panel1,
+    .owl-products-panel2,
+    .owl-products-panel3,
+    .owl-products-panel-page{
+        .item{
+            height: 290px;
+        }
+    }
+    .phone-box{
+        background: linear-gradient(253.4deg, #6366F1 0%, #3730A3 100%);
+    }
+    .handsfree-box{
+        background: linear-gradient(227.76deg, #9F1239 0%, #F43F5E 100%);
+        & img{
+            transform: translateY(18px);
+        }
+        overflow: hidden;
+    }
+    .mouse-box{
+        background: linear-gradient(95.24deg, #10B981 0%, #065F46 100%);
+    }
+    .powerbank-box{
+        background: linear-gradient(84.76deg, #F59E0B 0%, #92400E 100%);
+    }
+    @include media-breakpoint-down(xl) {
+        .product{
+            > div ,
+            div:nth-child(3) > div{
+                margin-bottom: 15px;
+            }
+        }
+    }
+    .boxes{
+        max-width: 350px;
+        padding-bottom: 15px;
+        @include media-breakpoint-up(xl) {
+            padding-bottom: 0;
+        }
+    }
+    @include media-breakpoint-down(md) {
+        .panels{
+            position: relative;
+            margin-bottom: 40px;
+            .row{
+                padding-top: 20px;
+            }
+            .more-button{
+                position: absolute;
+                left: 50%;
+                transform: translate(-50%);
+                top: 340px;
+            }
+            #more-button{top: 350px;}
+            .more-fav{
+                top: 370px;
+            }
+        }
+    }    
+}
